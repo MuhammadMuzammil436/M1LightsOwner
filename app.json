@@ -1,13 +1,15 @@
 {
   "expo": {
     "name": "M1LightsOwner",
-    "slug": "M1LightsOwner",
+    "slug": "m1lights-owner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "m1lightsowner",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muhammadmuzammil436.m1lightsowner"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +18,18 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.muhammadmuzammil436.m1lightsowner"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-status-bar",
+      "expo-web-browser"
+    ]
   }
 }
